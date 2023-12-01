@@ -113,14 +113,14 @@ class AdventTest(TestCase):
 
 
 if __name__ == "__main__":
-    with open("2023/input_2023_1_1.txt", "r") as f:
+    with open("advent/2023/input_2023_1_1.txt", "r") as f:
         calibrated_values = [
             get_calibration_value(input_line) for input_line in f.readlines()
         ]
         result = sum_all_calibration_values(calibrated_values)
-        print(f"Day 1: Part 1: {result=}")
+        print(f"2023 Day 1: Part 1: {result=}")
 
-    with open("2023/input_2023_1_1.txt", "r") as f:
+    with open("advent/2023/input_2023_1_1.txt", "r") as f:
         result = 0
 
         for input_line in f:
@@ -129,4 +129,4 @@ if __name__ == "__main__":
             print(f"{calibration_value=}\t{input_line}")
             result += calibration_value
         
-        print(f"Day 1: Part 2: {result=}")
+        print(f"2023 Day 1: Part 2: {result=}")
